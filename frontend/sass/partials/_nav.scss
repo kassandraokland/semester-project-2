@@ -1,0 +1,82 @@
+.nav-menu, .container-menu {
+    background-color: getColor(light);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav {
+    background-color: getColor(light);
+    display: none;
+    position: fixed;
+    top: 39px;
+    z-index: 1000;
+    right: 0;
+
+    @media (min-width: $desktop-width) {
+        display: block;
+        position: static;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0 50px;
+    
+    
+        @media (min-width: $desktop-width) {
+            flex-direction: row;
+        }
+    }
+    
+    li {
+        padding: 15px;
+        list-style: none;
+        margin: 0 auto;
+
+        &:hover {
+            background-color: darken($color: getColor(light), $amount: 5);
+        }
+
+        @media (min-width: $desktop-width) {
+            display: inline-block;
+            padding: 0 25px;
+        }
+    }
+
+}
+
+label .fa-bars {
+    color: getColor(red);
+    padding: 15px;
+
+    @media (min-width: $desktop-width) {
+        display: none;
+    }
+}
+
+#bars-menu {
+    display: none;
+
+    &:checked ~ nav {
+        display: block;
+    }
+}
+
+.menu > * {
+    padding: 10px 20px;
+}
+ 
+/*
+
+.list-item {
+
+
+    &__left {
+        justify-content: flex-start;
+    }
+
+    &__right {
+        justify-content: flex-end;
+    }
+}*/

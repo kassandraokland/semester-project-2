@@ -1,0 +1,65 @@
+.span-wrap {
+    position: relative;
+}
+  
+.arrowhead {
+    position: absolute;
+    font-size: 2rem;
+    cursor: pointer;
+    top: 75px;
+    left: .5%;
+    z-index: 1;
+    display: none;
+
+    &:nth-of-type(2) {
+        left: 98%;
+        text-align: right;
+    }
+
+    @media (min-width: $tablet-width) {
+        top: 150px;
+    }
+}
+
+  
+.featured-products {
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+        visibility: hidden;
+    }
+}
+
+  
+.lp-card {
+    min-width: 220px;
+    background-color: getColor(light);
+    height: 275px;
+    position: relative;
+    margin: 20px 10px;
+    left: 0;
+    transition: 0.5s;
+    border-radius: 10px;
+
+    h3 {
+        margin-left: 10px;
+    }
+
+    img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+    }
+}
+
+
+.lp-wrap {
+    @media (min-width: $tablet-width) {
+        max-width: 1060px;
+        margin: 0 auto;
+    }
+}

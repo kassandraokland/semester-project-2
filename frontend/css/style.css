@@ -1,0 +1,315 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #DEDFE0;
+  font-family: "tablet-gothic", sans-serif;
+  color: #3A3A3B;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+main {
+  width: 95vw;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  main {
+    width: 90vw;
+  }
+}
+@media (min-width: 1336px) {
+  main {
+    max-width: 1000px;
+  }
+}
+
+.nav-menu, .container-menu {
+  background-color: #F7F9FA;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+nav {
+  background-color: #F7F9FA;
+  display: none;
+  position: fixed;
+  top: 39px;
+  z-index: 1000;
+  right: 0;
+}
+@media (min-width: 1336px) {
+  nav {
+    display: block;
+    position: static;
+  }
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+}
+@media (min-width: 1336px) {
+  nav ul {
+    flex-direction: row;
+  }
+}
+nav li {
+  padding: 15px;
+  list-style: none;
+  margin: 0 auto;
+}
+nav li:hover {
+  background-color: #e7edf0;
+}
+@media (min-width: 1336px) {
+  nav li {
+    display: inline-block;
+    padding: 0 25px;
+  }
+}
+
+label .fa-bars {
+  color: #B81500;
+  padding: 15px;
+}
+@media (min-width: 1336px) {
+  label .fa-bars {
+    display: none;
+  }
+}
+
+#bars-menu {
+  display: none;
+}
+#bars-menu:checked ~ nav {
+  display: block;
+}
+
+.menu > * {
+  padding: 10px 20px;
+}
+
+/*
+
+.list-item {
+
+
+    &__left {
+        justify-content: flex-start;
+    }
+
+    &__right {
+        justify-content: flex-end;
+    }
+}*/
+h1, h2 {
+  font-family: "interstate", sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+.logo {
+  font-family: "pinot-grigio-modern", sans-serif;
+  color: #B81500;
+  padding: 10px;
+  font-size: 1.41em;
+}
+
+a {
+  text-decoration: none;
+  color: #3A3A3B;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  background: #B81500;
+  color: #F7F9FA;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.hero-banner {
+  background-color: #797A7A;
+  height: 35vh;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.hero-banner img {
+  height: 21vh;
+}
+@media (min-width: 1336px) {
+  .hero-banner {
+    height: 21vh;
+  }
+}
+
+.span-wrap {
+  position: relative;
+}
+
+.arrowhead {
+  position: absolute;
+  font-size: 2rem;
+  cursor: pointer;
+  top: 75px;
+  left: 0.5%;
+  z-index: 1;
+  display: none;
+}
+.arrowhead:nth-of-type(2) {
+  left: 98%;
+  text-align: right;
+}
+@media (min-width: 768px) {
+  .arrowhead {
+    top: 150px;
+  }
+}
+
+.featured-products {
+  width: 90%;
+  margin: 10px auto;
+  display: flex;
+  overflow-x: auto;
+}
+.featured-products::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+.lp-card {
+  min-width: 220px;
+  background-color: #F7F9FA;
+  height: 275px;
+  position: relative;
+  margin: 20px 10px;
+  left: 0;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+.lp-card h3 {
+  margin-left: 10px;
+}
+.lp-card img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+@media (min-width: 768px) {
+  .lp-wrap {
+    max-width: 1060px;
+    margin: 0 auto;
+  }
+}
+
+footer {
+  background-color: #F7F9FA;
+  text-align: center;
+  padding: 20px;
+  margin-top: 25px;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+footer li {
+  list-style: none;
+  padding: 0 15px;
+}
+
+.product-container {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.product {
+  padding: 10px;
+  border-radius: 15px;
+  background: #F7F9FA;
+  min-width: 35vw;
+}
+@media (min-width: 768px) {
+  .product {
+    min-width: 20vw;
+  }
+}
+@media (min-width: 1336px) {
+  .product {
+    min-width: 15vw;
+  }
+}
+
+form {
+  margin: 0 auto;
+  max-width: 400px;
+}
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+form input {
+  width: 100%;
+  padding: 0.4rem;
+}
+form > * {
+  margin-bottom: 25px;
+}
+form .message {
+  padding: 0.5rem;
+}
+form input, form textarea {
+  width: 100%;
+  padding: 0.4rem;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.edit-form {
+  display: none;
+}
+
+.delete {
+  background: darkred;
+}
+
+#logout {
+  width: auto;
+}
+
+input {
+  margin-bottom: 25px;
+}
+
+.message {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 25px;
+}
+.message .error {
+  border-color: red;
+  color: #F7F9FA;
+  background: red;
+}
+.message .warning {
+  border-color: orange;
+  color: #F7F9FA;
+  background: orange;
+}
+.message .success {
+  border-color: green;
+  color: #F7F9FA;
+  background: green;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,17 @@
+footer {
+
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    li {
+        list-style: none;
+        padding: 0 15px;
+    }
+
+    background-color: getColor(light);
+    text-align: center;
+    padding: 20px;
+    margin-top: 25px;
+}

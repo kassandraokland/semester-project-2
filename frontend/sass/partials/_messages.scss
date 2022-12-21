@@ -1,0 +1,23 @@
+.message {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 25px;
+
+    .error {
+        border-color: red;
+        color: getColor(light);
+        background: red;
+    }
+
+    .warning {
+        border-color: orange;
+        color: getColor(light);
+        background: orange;
+    }
+
+    .success {
+        border-color: green;
+        color: getColor(light);
+        background: green;
+    }
+}

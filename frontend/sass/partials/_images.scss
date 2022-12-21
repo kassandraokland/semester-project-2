@@ -1,0 +1,15 @@
+.hero-banner {
+
+    background-color: getColor(midgray);
+    height: 35vh;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    img {
+        height: 21vh;
+    }
+
+    @media (min-width: $desktop-width) {
+        height: 21vh;
+    }
+}

@@ -1,0 +1,18 @@
+$font-primary: "tablet-gothic", sans-serif;
+$font-headings: "interstate", sans-serif;
+$font-logo: "pinot-grigio-modern", sans-serif;
+
+$tablet-width: 768px;
+$desktop-width: 1336px;
+
+$colors: (
+    light: #F7F9FA,
+    dark: #3A3A3B,
+    red: #B81500,
+    lightgray: #DEDFE0,
+    midgray: #797A7A,
+);
+
+@function getColor($color) {
+    @return map-get($colors, $color);
+}

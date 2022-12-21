@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Kassandra Okland"/>
+        <meta name="description" content="Log in page for Identity shoe store. The best place to buy shoes/ sneakers online"/>
+        <meta name="keywords" content="shoe store, shoes, sneakers, buy online"/>
+        <title>Identity | Log in</title>
+        <link rel="stylesheet" href="https://use.typekit.net/jcs6uka.css">
+        <link href="css/style.css" rel="stylesheet"/>
+        <script src="https://kit.fontawesome.com/652569fc22.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <section class="nav-menu">
+                <a href="index.html" class="logo">Identity</a>
+                <label for="bars-menu"><i class="fas fa-bars"></i></label>
+                <input type="checkbox" id="bars-menu"/>
+                <nav>
+                    <ul>
+                        <li class="list-item list__left"><a href="index.html">Home</a></li>
+                        <li class="list-item list-item__left"><a href="products.html">Products</a></li>
+                        <li class="list-item list-item__right"><a href="login.html">Log in</a></li>
+                        <li class="list-item list-item__left"><a href="cart.html"><i class="fas fa-shopping-bag"></i></a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+        <main>
+            <div class="menu-container"></div>
+            <div class="container">
+                <h1>Login</h1>
+                <form>
+                    <div>
+                        <label for="username"> Username/email</label>
+                        <input id="username" />
+                    </div>
+                    <div>
+                        <label for="password"> Password</label>
+                        <input id="password" type="password"/>
+                    </div>
+                    <div class="message-container"></div>
+                    <button>Submit</button>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <section class="socials">
+                <ul>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-facebook"></i></li>
+                    <li><i class="fab fa-tiktok"></i></li>
+                </ul>
+            </section>
+            <div>&copy; Identity Shoe Store</div>
+        </footer>
+        <script src="js/login.js" type="module"></script>
+    </body>
+</html>

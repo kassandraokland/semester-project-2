@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Kassandra Okland"/>
+        <meta name="description" content="Home page for Identity shoe store. The best place to buy shoes/ sneakers online"/>
+        <meta name="keywords" content="shoe store, shoes, sneakers, buy online"/>
+        <title>Identity | Home</title>
+        <link rel="stylesheet" href="https://use.typekit.net/jcs6uka.css">
+        <link href="css/style.css" rel="stylesheet"/>
+        <script src="https://kit.fontawesome.com/652569fc22.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <section class="nav-menu">
+                <a href="index.html" class="logo">Identity</a>
+                <label for="bars-menu"><i class="fas fa-bars"></i></label>
+                <input type="checkbox" id="bars-menu"/>
+                <nav>
+                    <ul>
+                        <li class="list-item list__left"><a href="index.html">Home</a></li>
+                        <li class="list-item list-item__left"><a href="products.html">Products</a></li>
+                        <li class="list-item list-item__right"><a href="login.html">Log in</a></li>
+                        <li class="list-item list-item__left"><a href="cart.html" data-target="#cart"><i class="fas fa-shopping-bag"></i></a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+        <main>
+            <section class="hero-banner">
+                <a href="products.html" class="cta">View products</a>
+            </section>
+            <section class="featured-products__container">
+                <h4>Featured Products</h4>
+                <div class="span-wrap">
+                    <span class="arrowhead">&#11164;</span>
+                    <span class="arrowhead">&#11166;</span>
+                </div>
+                <div class="featured-products"></div>
+            </section>
+        </main>
+        <footer>
+            <section class="socials">
+                <ul>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-facebook"></i></li>
+                    <li><i class="fab fa-tiktok"></i></li>
+                </ul>
+            </section>
+            <div>&copy; Identity Shoe Store</div>
+        </footer>
+        <script src="js/index.js" type="module"></script>
+        <script src="js/cart.js" type="module"></script>
+    </body>
+</html>

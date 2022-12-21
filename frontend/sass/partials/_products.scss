@@ -1,0 +1,21 @@
+.product-container {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+
+}
+
+.product {
+    padding: 10px;
+    border-radius: 15px;
+    background: getColor(light);
+    min-width: 35vw;
+    
+    @media (min-width: $tablet-width) {
+        min-width: 20vw;
+    }
+
+    @media (min-width: $desktop-width) {
+        min-width: 15vw;
+    }
+}
